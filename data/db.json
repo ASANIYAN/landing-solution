@@ -1,0 +1,27 @@
+{
+    "contents": [
+        {
+            "id": 1,
+            "section": "Home",
+            "homeFirstContent": "Ensuring your tasks are organized and ready to be Smashed",
+            "homeSecondContent": "Having a hard time structuring your daily tasks and getting them done on-time? Taskify is here to make that Easy for You!!!",
+            "homeThirdContent": "Ensuring You Live a Structured Life.",
+            "homeFourthContent": "Committed to making sure you Achieve that Goal.",
+            "homeFifthContent": "Share Your streaks with your Friends on Taskify",
+            "homeSixthContent": "With Taskify, you can share and compare your daily streaks with your friends. The more you Complete your daily tasks, the higher your score and chances of getting to the LeaderBoard."
+        },
+        {
+            "id": 2,
+            "section": "About",
+            "AboutFirstContent": "IF YOU HAVE TASKS, THEN YOU DEFINETELY NEED US.",
+            "AboutSecondContent": "Our Mission is what pushes us to maximise human potentials. We do that by enabling our users properly organise tasks, set timers for when they wish to execute any of their tasks. We keep you up-to-date with your progress towards completing the tasks."
+        },
+        {
+            "id": 3,
+            "section": "Contact",
+            "contactFirstContent": "5, Alakuko Street, Lagos, Nigeria",
+            "contactSecondContent": "09033271463, 08150276586",
+            "contactThirdContent": "ayomidepaulasaniyan@gmail.com"
+        }
+    ]
+}
