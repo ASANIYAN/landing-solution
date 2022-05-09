@@ -17,8 +17,8 @@ function App() {
           <Navbar />
             <Routes>
               <Route path='/' element={<Home contents={contents} isPending={isPending} error={error} /> } />
-              <Route path='/about' contents={contents} isPending={isPending} error={error} element={<About /> } />
-              <Route path='/contact' contents={contents} isPending={isPending} error={error} element={<Contact /> } />
+              <Route path='/about' element={<About contents={contents} isPending={isPending} error={error} /> } />
+              <Route path='/contact' element={<Contact contents={contents} isPending={isPending} error={error} /> } />
             </Routes>
         </div>
           <Footer />

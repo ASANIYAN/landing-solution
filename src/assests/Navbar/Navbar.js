@@ -27,9 +27,9 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className={isNavExpanded ? 'md:hidden flex flex-col absolute w-full text-left text-color1 text-lg font-semibold mx-auto bg-white transition-all ease-in-out duration-600 pb-4' : 'md:hidden flex flex-col absolute w-full text-left text-color1 text-lg font-semibold mx-auto bg-white -top-56 transition-all ease-in-out duration-600 pb-4'}>
-                    <a href='/' className='pt-10' style={{cursor: 'pointer'}}>Home</a>
-                    <a href='/about' className='pt-10' style={{cursor: 'pointer'}}>About</a>
-                    <a href='/contact' className='pt-10' style={{cursor: 'pointer'}}>Contact</a>
+                    <Link to='/' className='pt-10' style={{cursor: 'pointer'}}>Home</Link>
+                    <Link to='/about' className='pt-10' style={{cursor: 'pointer'}}>About</Link>
+                    <Link to='/contact' className='pt-10' style={{cursor: 'pointer'}}>Contact</Link>
                 </div>
             </nav>
         </div>

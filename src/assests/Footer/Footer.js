@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
     return (
         <div className="w-full mx-auto bg-footer_bg mt-20 pb-10">
@@ -6,9 +8,9 @@ const Footer = () => {
                     Taskify
                 </p>
                 <div className="text-color1 text-lg font-semibold flex flex-col justify-evenly md:flex-row mt-8 md:mt-6 md:ml-10">
-                    <a href="/">Home</a>
-                    <a href="/">About</a>
-                    <a href='/contact'>Contact</a>
+                    <Link to="/">Home</Link>
+                    <Link to="/about">About</Link>
+                    <Link to="/contact">Contact</Link>
                 </div>
             </div>
             <p className="mt-6 text-center text-color2 font-semibold text-2xl">

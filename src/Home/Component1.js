@@ -6,7 +6,7 @@ const Component1 = ({contents}) => {
             <div className='pt-8 text-center md:w-1/2'>
                 {
                     contents.map((content) => (
-                        <h1 className="text-color1 font-bold text-4xl md:text-5xl">
+                        <h1 className="text-color1 font-bold text-4xl md:text-5xl" key={content.homeid}>
                             {
                             content.homeFirstContent
                             }
@@ -16,7 +16,7 @@ const Component1 = ({contents}) => {
                 }
                 {
                     contents.map((content) => (
-                        <p className="text-md mt-4 text-paragraph">
+                        <p className="text-md mt-4 text-paragraph" key={content.homeid}>
                             {
                             content.homeSecondContent
                             }

@@ -1,20 +1,38 @@
 import people from '../assests/img/people.webp'
 
-const About = () => {
+const About = ({contents, isPending, error}) => {
     return (
         <div className="container">
             <img src={people} className='mt-8' alt="business-people" style={{width: '100%'}} />
+            {
+                error && <div> { error } </div>
+            }
+            {
+                isPending && <div> Loading... </div>
+            }
             <div className='container'>
-                <p className="text-color2 font-semibold text-center text-xl pt-8">
-                    IF YOU HAVE TASKS, THEN YOU DEFINETELY NEED US.
-                </p>
+                {
+                    contents && contents.map((content) => (
+                    <p className="text-color2 font-semibold text-center text-xl pt-8" key={content.aboutid}>
+                        {
+                            content.aboutFirstContent
+                        }
+                    </p>
+                    ))
+                }
 
                 <h1 className="text-color1 text-center font-bold text-4xl md:text-5xl pt-4">
                     ABOUT TASKIFY
                 </h1>
-                <p className="text-lg text-paragraph pt-4">
-                    Our Mission is what pushes us to maximise human potentials. We do that by enabling our users properly organise tasks, set timers for when they wish to execute any of their tasks. We keep you up-to-date with your progress towards completing the tasks.
-                </p>
+                {
+                    contents && contents.map((content) => (
+                    <p className="text-lg text-paragraph pt-4" key={content.homeid}>
+                        {
+                            content.aboutSecondContent
+                        }
+                    </p>
+                    ))
+                }
 
             </div>
         </div>

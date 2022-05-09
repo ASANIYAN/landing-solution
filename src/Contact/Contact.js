@@ -1,4 +1,4 @@
-const Contact = () => {
+const Contact = ({contents, isPending, error}) => {
     return (
         <div className="container mt-10">
             <p className="text-color2 font-semibold text-left text-xl">
@@ -8,17 +8,29 @@ const Contact = () => {
                 If you Have any query, Don't Hesitate to Contact Us.
             </h1>
             <div className="mt-16 flex flex-col justify-center md:flex-row md:justify-evenly">
-
                 <div>
+
                     <div className="flex">
                         <i className="fa-solid fa-location-dot text-color2 text-3xl mt-3"></i>
                         <div className="flex flex-col ml-6">
                             <p className="text-2xl text-color1 font-bold">
                                 Office Address
                             </p>
-                            <small className="text-paragraph pt-2 text-base">
-                                5, Alakuko Street, Lagos, Nigeria
-                            </small>
+                            {
+                                error && <div> { error } </div>
+                            }
+                            {
+                                isPending && <div> Loading... </div>
+                            }
+                            {
+                                contents && contents.map((content) => (
+                                    <small className="text-paragraph pt-1 text-base">
+                                        {
+                                            content.contactFirstContent
+                                        }
+                                    </small>
+                                ))
+                            }
                         </div>
                     </div>
 
@@ -28,10 +40,22 @@ const Contact = () => {
                             <p className="text-2xl text-color1 font-bold">
                                 Phone
                             </p>
-                            <small className="text-paragraph pt-2 text-base">
-                                09033271463,
-                                08150276586
-                            </small>
+                            {
+                                error && <div> { error } </div>
+                            }
+                            {
+                                isPending && <div> Loading... </div>
+                            }
+                            {
+                                contents && contents.map((content) => (
+                                    <small className="text-paragraph pt-1 text-base">
+                                        {
+                                            content.contactSecondContent
+                                        }
+                                    </small>
+
+                                ))
+                            }
                         </div>
                     </div>
 
@@ -41,9 +65,22 @@ const Contact = () => {
                             <p className="text-2xl text-color1 font-bold">
                                 Email
                             </p>
-                            <small className="text-paragraph pt-2 text-base">
-                                ayomidepaulasaniyan@gmail.com
-                            </small>
+                            {
+                                error && <div> { error } </div>
+                            }
+                            {
+                                isPending && <div> Loading... </div>
+                            }
+                            {
+                                contents && contents.map((content) => (
+                                    <small className="text-paragraph pt-1 text-base">
+                                        {
+                                            content.contactThirdContent
+                                        }
+                                    </small>
+
+                                ))
+                            }
                         </div>
                     </div>
                 </div>
