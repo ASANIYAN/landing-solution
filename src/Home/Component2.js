@@ -1,13 +1,25 @@
-const Component2 = () => {
+const Component2 = ({contents}) => {
     return (
-        <div className="mt-10 md:mt-20 text-center">
-        <p className="text-color1 font-bold text-3xl md:text-5xl">
-            Ensuring You Live a Structured Life.
-        </p>
-        <p className="text-color1 font-bold text-3xl md:text-5xl">
-            Committed to making sure you Achieve that Goal.
-        </p>
-        </div>
+        <>
+            {
+                contents.map((content) => (
+                    <div className="mt-10 md:mt-20 text-center" key={contents.id}>
+                    <p className="text-color1 font-bold text-3xl md:text-5xl" key={contents.id}>
+                        {
+                            content.homeThirdContent
+                        }
+                    </p>
+                    <p className="text-color1 font-bold text-3xl md:text-5xl" key={contents.id}>
+                        {
+                            content.homeFourthContent
+                        }
+                    </p>
+                    </div>
+
+                ))
+            }
+
+        </>
     );
 }
 export default Component2;

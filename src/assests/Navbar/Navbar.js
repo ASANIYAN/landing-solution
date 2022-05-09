@@ -1,4 +1,4 @@
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 const Navbar = () => {
@@ -14,9 +14,9 @@ const Navbar = () => {
                 </p>
 
                     <div className='w-full hidden text-color1 text-lg font-semibold justify-evenly md:flex ml-6 pt-3'>
-                    <a href='/' style={{cursor: 'pointer'}}>Home</a>
-                    <a href='/about' style={{cursor: 'pointer'}}>About</a>
-                    <a href='/contact' style={{cursor: 'pointer'}}>Contact</a>
+                    <Link to='/' style={{cursor: 'pointer'}}>Home</Link>
+                    <Link to='/about' style={{cursor: 'pointer'}}>About</Link>
+                    <Link to='/contact' style={{cursor: 'pointer'}}>Contact</Link>
                     </div>
 
                     <div className='md:hidden'>

@@ -49,17 +49,17 @@ const Contact = () => {
                 </div>
 
                 <form className="mt-10 md:mt-0 md:ml-10 mx-auto container">
-                    <div class="mb-6 mx-auto">
+                    <div className="mb-6 mx-auto">
                         <input type="text" id="name" className="bg-transparent border border-gray-300  text-sm rounded-lg  block w-full p-2.5  text-paragraph dark" placeholder="Name" required />
                     </div>
-                    <div class="mb-6">
+                    <div className="mb-6">
                         <input type="email" id="email" className="bg-transparent border border-gray-300  text-sm rounded-lg  block w-full p-2.5  text-paragraph dark" placeholder="Email Address" required />
                     </div>
-                    <div class="mb-6">
+                    <div className="mb-6">
                         <textarea className="bg-transparent border border-gray-300  text-sm rounded-lg  block w-full p-2.5 text-paragraph dark" name="comment" placeholder="Write Comment" id="" cols="50" rows="10"></textarea>
                     </div>
 
-                    <button type="submit" class="bg-btn_bg hover:bg-btn_bg_hover hover:text-white text-btn_bg_hover font-bold py-3 px-8 rounded">Button</button>
+                    <button type="submit" className="bg-btn_bg hover:bg-btn_bg_hover hover:text-white text-btn_bg_hover font-bold py-3 px-8 rounded">Button</button>
                 </form>
             </div>
         </div>

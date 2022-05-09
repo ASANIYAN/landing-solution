@@ -5,9 +5,21 @@ import Component3 from "./Component3";
 const Home = ({contents, isPending, error}) => {
     return (
         <div>
-            <Component1 />
-            <Component2 />
-            <Component3 />
+            {
+                error && <div> { error } </div>
+            }
+            {
+                isPending && <div> Loading... </div>
+            }
+            {
+                contents &&<Component1 contents={contents} />
+            }
+            {
+                contents &&<Component2 contents={contents} />
+            }
+            {
+                contents &&<Component3 contents={contents} />
+            }
         </div>
     );
 }
